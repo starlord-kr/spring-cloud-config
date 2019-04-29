@@ -1,0 +1,11 @@
+server:
+  port: 8888
+
+spring:
+  profiles:
+    active: native # 애플리케이션 구성 정보를 저장하기 위해 파일시스템을 사용하기 때문에
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config

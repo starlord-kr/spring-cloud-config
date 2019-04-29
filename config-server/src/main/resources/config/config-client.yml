@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+com:
+  slowstarter:
+    exapme:
+      config:
+        client: default1
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: ["health", "refresh"]

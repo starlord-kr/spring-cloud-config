@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+com:
+  slowstarter:
+    exapme:
+      config:
+        client: local1
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: ["health", "refresh"]
+  #        include: ["metrics", "shutdown", "health", "threaddump", "info"]
+  #  server:
+  #    port: 8888
+  endpoint:
+    health:
+      show-details: always

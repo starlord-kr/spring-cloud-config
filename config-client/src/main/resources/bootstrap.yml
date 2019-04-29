@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-client
+  profiles:
+    active: default
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: ["health", "refresh"]
