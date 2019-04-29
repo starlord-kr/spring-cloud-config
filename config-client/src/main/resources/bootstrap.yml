@@ -7,9 +7,16 @@ spring:
     config:
       uri: http://localhost:8888
 
-management:
-  endpoints:
-    enabled-by-default: true
-    web:
-      exposure:
-        include: ["health", "refresh"]
+#management:
+#  endpoints:
+#    enabled-by-default: true
+#    web:
+#      exposure:
+#        include: ["health", "env"]
+#  #        include: ["*"]
+#  #        include: ["metrics", "shutdown", "health", "threaddump", "info"]
+#  #  server:
+#  #    port: 8888
+#  endpoint:
+#    health:
+#      show-details: always

@@ -2,10 +2,24 @@ server:
   port: 8888
 
 spring:
+  application:
+    name: config-server
   profiles:
     active: native # 애플리케이션 구성 정보를 저장하기 위해 파일시스템을 사용하기 때문에
   cloud:
     config:
       server:
         native:
-          search-locations: classpath:/config
+          search-locations: classpath:/config/
+
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: ["health", "env", "refresh"]
+  #        include: ["*"]
+  endpoint:
+    health:
+      show-details: always

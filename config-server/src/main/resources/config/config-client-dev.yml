@@ -1,12 +1,6 @@
 server:
   port: 8080
 
-com:
-  slowstarter:
-    exapme:
-      config:
-        client: dev1
-
 management:
   endpoints:
     enabled-by-default: true
@@ -19,3 +13,9 @@ management:
   endpoint:
     health:
       show-details: always
+
+com:
+  slowstarter:
+    exapme:
+      config:
+        client: dev1
